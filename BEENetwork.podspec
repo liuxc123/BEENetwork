@@ -17,7 +17,6 @@ Pod::Spec.new do |s|
       ss.dependency 'BEENetwork/RxMoya'
       ss.dependency 'BEENetwork/RxObjectMapper'
       ss.dependency 'Moya'
-      ss.dependency 'RxSwift', '>= 5.0.0'
   end
 
   s.subspec 'Cache' do |ss|
@@ -27,17 +26,20 @@ Pod::Spec.new do |s|
 
   s.subspec 'MoyaSugar' do |ss|
     ss.source_files = 'BEENetwork/Classes/MoyaSugar'
+    ss.dependency 'Moya'
   end
 
   s.subspec 'RxMoya' do |ss|
     ss.source_files = 'BEENetwork/Classes/RxMoya'
+    ss.dependency 'Moya'
+    ss.dependency 'RxSwift', '>= 5.0.0'
   end
 
   s.subspec 'RxObjectMapper' do |ss|
     ss.source_files = 'BEENetwork/Classes/RxObjectMapper'
     ss.dependency 'ObjectMapper'
+    ss.dependency 'Moya'
+    ss.dependency 'RxSwift', '>= 5.0.0'
   end
-
-#  s.dependency 'SwiftyJSON'
 
 end
