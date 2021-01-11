@@ -1,0 +1,6 @@
+framework module BEENetwork {
+  umbrella header "BEENetwork-umbrella.h"
+
+  export *
+  module * { export * }
+}

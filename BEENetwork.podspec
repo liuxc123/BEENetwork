@@ -1,42 +1,43 @@
-#
-# Be sure to run `pod lib lint BEENetwork.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'BEENetwork'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of BEENetwork.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
+  s.version          = '1.0.0'
+  s.summary          = '网络库封装'
   s.homepage         = 'https://github.com/liuxc123/BEENetwork'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'liuxc123' => 'lxc_work@126.com' }
   s.source           = { :git => 'https://github.com/liuxc123/BEENetwork.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
   s.ios.deployment_target = '9.0'
+  s.requires_arc          = true
+  s.swift_version         = '5.0'
+  s.default_subspec       = 'Core'
 
-  s.source_files = 'BEENetwork/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'BEENetwork' => ['BEENetwork/Assets/*.png']
-  # }
+  s.subspec 'Core' do |ss|
+      ss.source_files = 'BEENetwork/Classes/Core'
+      ss.dependency 'BEENetwork/MoyaSugar'
+      ss.dependency 'BEENetwork/RxMoya'
+      ss.dependency 'BEENetwork/RxObjectMapper'
+      ss.dependency 'Moya'
+      ss.dependency 'RxSwift', '>= 5.0.0'
+  end
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec 'Cache' do |ss|
+    ss.source_files = 'BEENetwork/Classes/Cache'
+    ss.dependency 'BEENetwork/Core'
+  end
+
+  s.subspec 'MoyaSugar' do |ss|
+    ss.source_files = 'BEENetwork/Classes/MoyaSugar'
+  end
+
+  s.subspec 'RxMoya' do |ss|
+    ss.source_files = 'BEENetwork/Classes/RxMoya'
+  end
+
+  s.subspec 'RxObjectMapper' do |ss|
+    ss.source_files = 'BEENetwork/Classes/RxObjectMapper'
+    ss.dependency 'ObjectMapper'
+  end
+
+#  s.dependency 'SwiftyJSON'
+
 end

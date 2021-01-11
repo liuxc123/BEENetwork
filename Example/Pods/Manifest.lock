@@ -1,0 +1,49 @@
+PODS:
+  - Alamofire (4.9.1)
+  - BEENetwork/Cache (1.0.0):
+    - BEENetwork/Core
+  - BEENetwork/Core (1.0.0):
+    - BEENetwork/MoyaSugar
+    - BEENetwork/RxMoya
+    - BEENetwork/RxObjectMapper
+    - Moya
+    - RxSwift (>= 5.0.0)
+  - BEENetwork/MoyaSugar (1.0.0)
+  - BEENetwork/RxMoya (1.0.0)
+  - BEENetwork/RxObjectMapper (1.0.0):
+    - ObjectMapper
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - ObjectMapper (4.2.0)
+  - Result (4.1.0)
+  - RxSwift (6.0.0)
+
+DEPENDENCIES:
+  - BEENetwork/Cache (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Moya
+    - ObjectMapper
+    - Result
+    - RxSwift
+
+EXTERNAL SOURCES:
+  BEENetwork:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  BEENetwork: d93629a935c394c3234ae76be8996a95ccb80610
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RxSwift: c14e798c59b9f6e9a2df8fd235602e85cc044295
+
+PODFILE CHECKSUM: 8811a63cf24e86968b12a5911c57123705468185
+
+COCOAPODS: 1.9.1

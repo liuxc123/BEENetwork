@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0457FE5125AC3CD5009BD675 /* LoggingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457FE5025AC3CD5009BD675 /* LoggingPlugin.swift */; };
+		0457FE5525AC3D23009BD675 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457FE5425AC3D23009BD675 /* Api.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -28,8 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0457FE5025AC3CD5009BD675 /* LoggingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingPlugin.swift; sourceTree = "<group>"; };
+		0457FE5425AC3D23009BD675 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		051ACBFE9DABBDEACBEB8FB1 /* Pods-BEENetwork_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BEENetwork_Tests.release.xcconfig"; path = "Target Support Files/Pods-BEENetwork_Tests/Pods-BEENetwork_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		0E33D2E9EE90F7DF89F6A5C5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0E33D2E9EE90F7DF89F6A5C5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3B42A02B4432D60620F3EE23 /* Pods-BEENetwork_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BEENetwork_Example.release.xcconfig"; path = "Target Support Files/Pods-BEENetwork_Example/Pods-BEENetwork_Example.release.xcconfig"; sourceTree = "<group>"; };
 		492A1E137B0CD462766EA962 /* Pods_BEENetwork_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BEENetwork_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB9D4EDDFBA6FB44272489F /* Pods-BEENetwork_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BEENetwork_Tests.debug.xcconfig"; path = "Target Support Files/Pods-BEENetwork_Tests/Pods-BEENetwork_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -44,9 +48,9 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		783834213BAE387B20E92EDC /* Pods-BEENetwork_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BEENetwork_Example.debug.xcconfig"; path = "Target Support Files/Pods-BEENetwork_Example/Pods-BEENetwork_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		8B4B29D31B19218DF4F9941D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8B4B29D31B19218DF4F9941D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9678CA03F8570FFBE70C1B96 /* Pods_BEENetwork_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BEENetwork_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8989A141E0AB28AB931A80F /* BEENetwork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = BEENetwork.podspec; path = ../BEENetwork.podspec; sourceTree = "<group>"; };
+		F8989A141E0AB28AB931A80F /* BEENetwork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BEENetwork.podspec; path = ../BEENetwork.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +81,6 @@
 				4DB9D4EDDFBA6FB44272489F /* Pods-BEENetwork_Tests.debug.xcconfig */,
 				051ACBFE9DABBDEACBEB8FB1 /* Pods-BEENetwork_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -116,6 +119,8 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				0457FE5025AC3CD5009BD675 /* LoggingPlugin.swift */,
+				0457FE5425AC3D23009BD675 /* Api.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -227,6 +232,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -291,11 +297,21 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BEENetwork_Example/Pods-BEENetwork_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/BEENetwork/BEENetwork.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BEENetwork.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -332,6 +348,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				0457FE5125AC3CD5009BD675 /* LoggingPlugin.swift in Sources */,
+				0457FE5525AC3D23009BD675 /* Api.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,7 +502,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -499,7 +517,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
