@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'BEENetwork_Example' do
+  pod 'BEENetwork', :path => '../'
+
+  target 'BEENetwork_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
